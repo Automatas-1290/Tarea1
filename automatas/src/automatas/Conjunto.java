@@ -30,9 +30,9 @@ public class Conjunto {
     }
     public void elimina(Object e){
         if(a.remove(e)){
-            System.out.println("Elemento+e+" +": ha sido eliminado");
+            //System.out.println("Elemento+e+" +": ha sido eliminado");
         }else{
-            System.out.println("Note el elemento a eliminar");
+            //System.out.println("Note el elemento a eliminar");
         }
     }
     public SortedSet subconjuntosup(Object e){
@@ -63,4 +63,8 @@ public class Conjunto {
         a.removeAll(b);
         return a;
     }
+    public SortedSet complemento(SortedSet a, SortedSet b){
+        a.containsAll(b);
+        return a;
+    }    
 }
