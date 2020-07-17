@@ -1,22 +1,24 @@
 package automatas;
 
-
 public class Ejecutor {
     public static void main(String[] args) {
         Conjunto ca = new Conjunto();
-        //Operaciones basicas----operaciones conjuntivistas
-        for(int i=1; i<=10; i++){
+        //Operaciones Básicas <----> Operaciones Conjuntivistas
+        for(int i=1; i<=10; i++) {
             ca.inserta((Integer)i);
         }
+        
         System.out.println("El Conjunto A es: "+ca.getA());
         ca.inserta(6);
         ca.elimina(3);
         System.out.println("El Conjunto A es: "+ca.getA());
-        //Operaciones de subconjuntos
+        
+        //Operaciones de Subconjuntos
         System.out.println("Subconjuntoos mayores:"+ca.subconjuntosup(5));
         System.out.println("Subconjuntoos menores:"+ca.subconjuntoinf(8));
         System.out.println("Subconjuntoe:"+ca.subconjuntoentre(2,9));
-        //Operaciones con conjuntos
+        
+        //Operaciones con Conjuntos
         Conjunto cb=new Conjunto();
         //cb.inserta(6);
         cb.inserta(11);
@@ -35,39 +37,28 @@ public class Ejecutor {
         System.out.println("Conjuntoccb.getA()");
         System.out.println("Conjuntoccc.getA()");
         
-        System.out.println("Complemento A Y B:"+cb.complemento(cb.a, ca.a));
-        
+        System.out.println("Complemento A Y B:"+cb.complemento(cb.a, ca.a));     
         System.out.println("Complemento A Y C:"+ca.complemento(cc.a, ca.a));
         
-        
-        
-        
-        if(ca.equals(cb)){
+        if(ca.equals(cb)) {
             System.out.println("Son iguales");
         }
-        else
-        {
-            
+        else {
             System.out.println("No son iguales los elementos del conjunto A Y B");
         }
         
-        if(ca.equals(cc)){
+        if(ca.equals(cc)) {
             System.out.println("Son iguales");
         }
-        else
-        {
-
+        else {
             System.out.println("No son iguales los elementos del conjunto A Y C");
         }    
         
-        if(ca.equals(ca)){
+        if(ca.equals(ca)) {
             System.out.println("Son iguales A Y A (Se usó para comprobar que la igualdad es verdadera)");
         }
-        else
-        {
+        else {
             System.out.println("No son iguales los elementos del conjunto A Y C");
-        }          
-
-        
+        }
     }
-     }
+}
