@@ -67,4 +67,8 @@ public class Conjunto {
         a.containsAll(b);
         return a;
     }    
+    public SortedSet igualdad(SortedSet a, SortedSet b){
+        a.equals(b);
+        return a;
+    }        
 }

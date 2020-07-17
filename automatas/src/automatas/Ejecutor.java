@@ -26,7 +26,7 @@ public class Ejecutor {
         System.out.println("Subconjuntoe:"+ca.subconjuntoentre(2,9));
         //Operaciones con conjuntos
         Conjunto cb=new Conjunto();
-        cb.inserta(6);
+        //cb.inserta(6);
         cb.inserta(11);
         cb.inserta(12);
         System.out.println("Conjunto B:"+cb.getA());
@@ -43,13 +43,39 @@ public class Ejecutor {
         System.out.println("Conjuntoccb.getA()");
         System.out.println("Conjuntoccc.getA()");
         
+        System.out.println("Complemento A Y B:"+cb.complemento(cb.a, ca.a));
+        
         System.out.println("Complemento A Y C:"+ca.complemento(cc.a, ca.a));
         
-        //cb.elimina(6);
-        System.out.println("Complemento A Y B:"+ca.complemento(cb.a, ca.a));
         
         
         
+        if(ca.equals(cb)){
+            System.out.println("Son iguales");
+        }
+        else
+        {
+            
+            System.out.println("No son iguales los elementos del conjunto A Y B");
+        }
+        
+        if(ca.equals(cc)){
+            System.out.println("Son iguales");
+        }
+        else
+        {
+
+            System.out.println("No son iguales los elementos del conjunto A Y C");
+        }    
+        
+        if(ca.equals(ca)){
+            System.out.println("Son iguales A Y A (Se usó para comprobar que la igualdad es verdadera)");
+        }
+        else
+        {
+            System.out.println("No son iguales los elementos del conjunto A Y C");
+        }          
+
         
     }
      }
