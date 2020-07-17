@@ -5,10 +5,7 @@
  */
 package automatas;
 
-/**
- *
- * @author jsgl8
- */
+
 import java.util.*;
 public class Conjunto {
     public SortedSet a;

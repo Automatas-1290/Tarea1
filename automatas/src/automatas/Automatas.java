@@ -5,10 +5,7 @@
  */
 package automatas;
 
-/**
- *
- * @author jsgl8
- */
+
 public class Automatas {
 
     /**
